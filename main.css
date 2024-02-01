@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .homeTxt {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      border: none;
+      background: none;
+      font-size: 100px;
+      font-weight: bolder;
+      color: #03518d89;
+      cursor: pointer;
+    }
+    button:hover {
+      letter-spacing: 5px;
+      color: transparent;
+      -webkit-text-stroke: 4px #03518dbb;
+      text-shadow: #03518d 0px 18px 20px;
+      transition: 1s;
+    }
+    button:active {
+      color: #038d8b53;
+      -webkit-text-stroke: 4px #03828dbb;
+      text-shadow: #03518d 0px 7px 10px;
+      letter-spacing: 5px;
+      transition: 0.1s;
+    }
+  }
+  #calculator {
+    display: none;
+    .calculator {
+      width: 50%;
+      height: 70vh;
+      position: fixed;
+      left: 25%;
+      top: 15vh;
+      background: #60606084;
+      border-radius: 5%;
+      box-shadow: 0 20px 40px 15px #747272;
+      .log {
+        color: #0c0c0ccf;
+        margin-left: 5%;
+        margin-top: 3%;
+      }
+      .inp {
+        width: 100%;
+        height: 15vh;
+        input[type="number"] {
+          width: 86%;
+          height: 6vh;
+          border-radius: 8px;
+          margin: 5% 5% 10%;
+          padding: 2%;
+          text-align: right;
+          font-size: 250%;
+        }
+        input[type="number"]:focus {
+          outline: none;
+        }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+      .btns {
+        width: 90%;
+        height: 45vh;
+        background: #03518d;
+        margin-left: 5%;
+        display: flex;
+        .numbers {
+          display: flex;
+          flex-wrap: wrap;
+          width: 75%;
+          .zero {
+            width: 100%;
+            height: 12vh;
+          }
+          .num1,
+          .num2,
+          .num3,
+          .num4,
+          .num5,
+          .num6,
+          .num7,
+          .num8,
+          .num9 {
+            width: 33.3%;
+            height: 11vh;
+          }
+        }
+        .funcs {
+          display: flex;
+          flex-wrap: wrap;
+          width: 25%;
+          height: 45px;
+          .divisions,
+          .rmultiplicationow,
+          .minus,
+          .plus {
+            width: 100%;
+            height: 8.25vh;
+          }
+          .equals {
+            width: 100%;
+            height: 12vh;
+          }
+        }
+      }
+    }
+  }
+}
