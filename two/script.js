@@ -20,15 +20,13 @@
 // }
 // else if(age>=14 && age<=17){
 //     console.log("Пролетая над гнездом кукушки")
-// } 
+// }
 // else if(age>=18 && age<=90){
 //     console.log("Marvel")
-// } 
+// }
 // else{
 //     console.log("Ощибка")
 // }
-
-
 
 // Задание №2
 // Переменная num может принимать 4 значения: 1, 2, 3 или 4.
@@ -59,11 +57,40 @@
 // default:("Error")
 // }
 
-
-
-
-
-
 // let name = "Nurik";
 // let password = 444;
 // if (name)
+
+// Создайте несколько переменных с типом данных str, так,
+// чтобы одна переменная содержала одно слово, затем
+// объедините их в одно предложение, так, чтобы слова были
+// записаны через пробел.
+// Пример ввода:
+//     'Hello'
+//     'World'
+// Пример вывода:
+//     'Hello World'
+
+let str1 = "Hello";
+let str2 = " ";
+let str3 = "World";
+console.log(str1 + str2 + str3);
+
+// Создайте переменные a6, a7, a8, a9, a10.
+// Поместите в них результат выражений:
+//  • 5 % 3,
+//  • 3 % 5,
+//  • 5 + '3',
+//  • '5' - 3,
+//  • 75 + 'кг'
+let num1 = +prompt("Введите первый число:");
+let num2 = +prompt("Введите второе число:");
+let action = prompt("Введите значение:");
+let str = " кг";
+if (num1 + num2) {
+  console.log(num1 + num2 + str);
+} else if (num1 - num2) {
+  console.log(num1 - num2 + str);
+} else if (num1 % num2) {
+  console.log((num1 % num2) + str);
+}
