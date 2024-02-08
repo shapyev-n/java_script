@@ -36,86 +36,83 @@ body {
       transition: 0.1s;
     }
   }
-  #calculator {
-    display: none;
-    .calculator {
-      width: 50%;
-      height: 70vh;
-      position: fixed;
-      left: 25%;
-      top: 15vh;
-      background: #60606084;
-      border-radius: 5%;
-      box-shadow: 0 20px 40px 15px #747272;
-      .log {
-        color: #0c0c0ccf;
-        margin-left: 5%;
-        margin-top: 3%;
+  .calculator {
+    width: 50%;
+    height: 70vh;
+    position: fixed;
+    left: 25%;
+    top: 15vh;
+    background: #60606084;
+    border-radius: 5%;
+    box-shadow: 0 20px 40px 15px #747272;
+    .log {
+      color: #0c0c0ccf;
+      margin-left: 5%;
+      margin-top: 3%;
+    }
+    .inp {
+      width: 100%;
+      height: 15vh;
+      input[type="number"] {
+        width: 86%;
+        height: 6vh;
+        border-radius: 8px;
+        margin: 5% 5% 10%;
+        padding: 2%;
+        text-align: right;
+        font-size: 250%;
       }
-      .inp {
-        width: 100%;
-        height: 15vh;
-        input[type="number"] {
-          width: 86%;
-          height: 6vh;
-          border-radius: 8px;
-          margin: 5% 5% 10%;
-          padding: 2%;
-          text-align: right;
-          font-size: 250%;
-        }
-        input[type="number"]:focus {
-          outline: none;
-        }
-        input[type="number"]::-webkit-outer-spin-button,
-        input[type="number"]::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0;
-        }
+      input[type="number"]:focus {
+        outline: none;
       }
-      .btns {
-        width: 90%;
-        height: 45vh;
-        background: #03518d;
-        margin-left: 5%;
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    .btns {
+      width: 90%;
+      height: 45vh;
+      background: #03518d;
+      margin-left: 5%;
+      display: flex;
+      .numbers {
         display: flex;
-        .numbers {
-          display: flex;
-          flex-wrap: wrap;
-          width: 75%;
-          .zero {
-            width: 100%;
-            height: 12vh;
-          }
-          .num1,
-          .num2,
-          .num3,
-          .num4,
-          .num5,
-          .num6,
-          .num7,
-          .num8,
-          .num9 {
-            width: 33.3%;
-            height: 11vh;
-          }
+        flex-wrap: wrap;
+        width: 75%;
+        .zero {
+          width: 100%;
+          height: 12vh;
         }
-        .funcs {
-          display: flex;
-          flex-wrap: wrap;
-          width: 25%;
-          height: 45px;
-          .divisions,
-          .rmultiplicationow,
-          .minus,
-          .plus {
-            width: 100%;
-            height: 8.25vh;
-          }
-          .equals {
-            width: 100%;
-            height: 12vh;
-          }
+        .num1,
+        .num2,
+        .num3,
+        .num4,
+        .num5,
+        .num6,
+        .num7,
+        .num8,
+        .num9 {
+          width: 33.3%;
+          height: 11vh;
+        }
+      }
+      .funcs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+        height: 45px;
+        .divisions,
+        .rmultiplicationow,
+        .minus,
+        .plus {
+          width: 100%;
+          height: 8.25vh;
+        }
+        .equals {
+          width: 100%;
+          height: 12vh;
         }
       }
     }

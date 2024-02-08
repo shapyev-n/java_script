@@ -18,11 +18,11 @@ if (c == "%") {
 }
 //? ----------------------------------------------------------------
 
-function myFunction() {
-  let element = document.getElementById("myCalculator");
-  if (element.style.display === "none") {
-    element.style.display = "block";
-  } else {
-    element.style.display = "none";
-  }
-}
+// function myFunction() {
+//   let element = document.getElementById("myCalculator");
+//   if (element.style.display === "none") {
+//     element.style.display = "block";
+//   } else {
+//     element.style.display = "none";
+//   }
+// }
