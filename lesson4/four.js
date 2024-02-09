@@ -1,7 +1,7 @@
 //! ARRAY
-// let arr = [1, 2, 3, 4, 5];
-// let res = arr.pop();
-// console.log(res);
+// let array1 = [1, 2, 3, 4, 5];
+// let result1 = array1.pop();
+// console.log(result1);
 //? pop - удаляет 1 element с конца
 
 // let arr = [1, 2, 3, 4, 5];
@@ -59,107 +59,107 @@
 //! Задание №1
 // Дан массив ["dlrow", "olleH"]. Измените его таким образом, чтобы в итоге получилось ["Hello", "world"]. Используйте методы массива.
 
-// let arr = ["dlrow", "olleH"];
-// let str = arr.join(" ").split("").reverse().join("");
-// console.log(str);
+let array1 = ["dlrow", "olleH"];
+let result1 = array1.join(" ").split("").reverse().join("").split(" ");
+console.log(result1);
 
 //! Задание №2
 // Дан массив ['а', 'б', 'в']. Добавьте ему в конец элементы 4,3,5,5.
 
-// let arr = ["а", "б", "в"];
-// arr.push(4, 3, 5, 5);
-// console.log(arr);
+let array2 = ["а", "б", "в"];
+array2.push(4, 3, 5, 5);
+console.log(array2);
 
 //! Задание №3
 // Дан массив ["Apple", "Orange", "Pinapple", "Cherry"]. Удалите сначала первый элемент "Apple" и этот же элемент подставтье после "Pineapple".
 
-// let arr = ["Apple", "Orange", "Pinapple", "Cherry"];
-// let str = arr.shift();
-// arr.splice(2, 0, str);
-// console.log(arr);
+let array3 = ["Apple", "Orange", "Pinapple", "Cherry"];
+let result3 = array3.shift();
+array3.splice(2, 0, result3);
+console.log(array3);
 
 //! Задание №4
 // Дан массив [8, -7, -21, 44, 3]. Вывести в консоль наиболшее число из массива.
 // Подсказка: нужно использовать метод sort().
 
-// let arr = [8, -7, -21, 44, 3];
-// arr.sort((a, b) => a - b);
-// console.log(arr);
-// console.log(arr[4]);
+let array4 = [8, -7, -21, 44, 3];
+array4.sort((a, b) => a - b);
+console.log(array4);
+// console.log(array4[4]);
 
 // !
 
 //! 1. Даны два массива: [1, 2, 3] и [4, 5, 6]. Объедините их вместе. (Используйте concat)
 
-// let a = [1, 2, 3];
-// let b = [4, 5, 6];
-// let c = a.concat(b);
-// console.log(c);
+let a = [1, 2, 3];
+let b = [4, 5, 6];
+let c = a.concat(b);
+console.log(c);
 
 //! 2. Дан массив [1, 2, 3]. Сделайте из него массив [3, 2, 1]. (Используйте reverse)
 
-// let arr = [1, 2, 3];
-// arr.reverse();
-// console.log(arr);
+let arr2 = [1, 2, 3];
+arr2.reverse();
+console.log(arr2);
 
 //! 3. Дан массив [1, 2, 3]. Добавьте ему в конец элементы 4, 5, 6. (методы push, unshift)
 
-// let arr = [1, 2, 3];
-// arr.push(4, 5, 6)
-// console.log(arr);
+let arr3 = [1, 2, 3];
+arr3.push(4, 5, 6);
+console.log(arr3);
 
 //! 4. Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
 
-// let arr = [1, 2, 3];
-// arr.push(4, 5, 6);
-// console.log(arr);
+let arr4 = [1, 2, 3];
+arr4.push(4, 5, 6);
+console.log(arr4);
 
 //! 5. Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент. (методы shift pop)
 
-// let array = ["js", "css", "jq"];
-// let result = array.shift(0);
-// console.log(result);
+let arr5 = ["js", "css", "jq"];
+let res5 = arr5.shift(0);
+console.log(res5);
 
 //! 6. Дан массив ['js', 'css', 'jq']. Выведите на экран последний элемент.
 
-// let array = ["js", "css", "jq"];
-// let result = array.pop();
-// console.log(result);
+let arr6 = ["js", "css", "jq"];
+let res6 = arr6.pop();
+console.log(res6);
 
 //! 7. Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5].  (метод splice)
 
-// let array = [1, 2, 3, 4, 5];
-// array.splice(1, 2);
-// console.log(array);
+let arr7 = [1, 2, 3, 4, 5];
+arr7.splice(1, 2);
+console.log(arr7);
 
 //! 8. Дан массив [1, 2, 3, 4, 5]. С помощью метода splice запишите в новый массив элементы [2, 3, 4].
 
-// let array = [1, 2, 3, 4, 5];
-// let result = array.splice(1, 3);
-// console.log(result);
+let arr8 = [1, 2, 3, 4, 5];
+let res8 = arr8.splice(1, 3);
+console.log(res8);
 
 //! 9. Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 2, 3, 'a', 'b', 'c', 4, 5].
 
-// let arr = [1, 2, 3, 4, 5];
-// arr.splice(3, 0, "a", "b", "c");
-// console.log(arr);
+let arr9 = [1, 2, 3, 4, 5];
+arr9.splice(3, 0, "a", "b", "c");
+console.log(arr9);
 
 //! 10. Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
 
-// let arr = [1, 2, 3, 4, 5];
-// arr.splice(1, 0, "a", "b");
-// arr.splice(6, 0, "c");
-// arr.splice(8, 0, "e");
-// console.log(arr);
+let arr10 = [1, 2, 3, 4, 5];
+arr10.splice(1, 0, "a", "b");
+arr10.splice(6, 0, "c");
+arr10.splice(8, 0, "e");
+console.log(arr10);
 
 //! 11. Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3]. (метод slice)
 
-let arr = [1, 2, 3, 4, 5];
-let res = arr.slice(0, 3);
-console.log(res);
+let arr11 = [1, 2, 3, 4, 5];
+let res11 = arr11.slice(0, 3);
+console.log(res11);
 
 //! 12. Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
 
-// let arr = [1, 2, 3, 4, 5];
-// let res = arr.slice(3);
-// console.log(res);
+let arr12 = [1, 2, 3, 4, 5];
+let res12 = arr12.slice(3);
+console.log(res12);
