@@ -71,26 +71,26 @@
 // Пример вывода:
 //     'Hello World'
 
-let str1 = "Hello";
-let str2 = " ";
-let str3 = "World";
-console.log(str1 + str2 + str3);
+// let str1 = "Hello";
+// let str2 = " ";
+// let str3 = "World";
+// console.log(str1 + str2 + str3);
 
-// Создайте переменные a6, a7, a8, a9, a10.
+//! Создайте переменные a6, a7, a8, a9, a10.
 // Поместите в них результат выражений:
 //  • 5 % 3,
 //  • 3 % 5,
 //  • 5 + '3',
 //  • '5' - 3,
 //  • 75 + 'кг'
-let num1 = +prompt("Введите первый число:");
-let num2 = +prompt("Введите второе число:");
-let action = prompt("Введите значение:");
-let str = " кг";
-if (num1 + num2) {
-  console.log(num1 + num2 + str);
-} else if (num1 - num2) {
-  console.log(num1 - num2 + str);
-} else if (num1 % num2) {
-  console.log((num1 % num2) + str);
-}
+// let num1 = +prompt("Введите первый число:");
+// let num2 = +prompt("Введите второе число:");
+// let action = prompt("Введите значение:");
+// let str = " кг";
+// if (num1 + num2) {
+//   console.log(num1 + num2 + str);
+// } else if (num1 - num2) {
+//   console.log(num1 - num2 + str);
+// } else if (num1 % num2) {
+//   console.log((num1 % num2) + str);
+// }

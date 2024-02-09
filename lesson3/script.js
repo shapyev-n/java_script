@@ -83,10 +83,10 @@ let discount = 15; // присваиваем значение скидки
 // let str="helo"
 // str.toUpperCase()
 
-let name = "John";
-name[0] === name[0].toUpperCase()
-  ? console.log(name[0].toUpperCase() + name.slice(1))
-  : console.log(name[0].toLowerCase() + name.slice(1));
+// let name = "John";
+// name[0] === name[0].toUpperCase()
+//   ? console.log(name[0].toUpperCase() + name.slice(1))
+//   : console.log(name[0].toLowerCase() + name.slice(1));
 
 
 
