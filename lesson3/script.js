@@ -88,7 +88,10 @@ let discount = 15; // присваиваем значение скидки
 //   ? console.log(name[0].toUpperCase() + name.slice(1))
 //   : console.log(name[0].toLowerCase() + name.slice(1));
 
-
+let name = prompt();
+name[0] === name[0].toUpperCase()
+  ? console.log(name[0].toLowerCase() + name.slice(1))
+  : console.log(name[0].toUpperCase() + name.slice(1));
 
 //   methods = [
 //     "quote",
