@@ -163,3 +163,5 @@ console.log(res11);
 let arr12 = [1, 2, 3, 4, 5];
 let res12 = arr12.slice(3);
 console.log(res12);
+
+
