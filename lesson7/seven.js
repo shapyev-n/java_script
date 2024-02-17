@@ -11,8 +11,6 @@
 
 // console.log(res);
 
-let arr2 = [1, 2, 3, 4];
-let res = 1;
 
 //! Task 2
 // Создайте переменную num.Присвойте переменной числовое
@@ -28,8 +26,8 @@ let res = 1;
 // for (i = 0; i<=num; ++i) {
 //     console.log(i);
 // }
-let num = 5;
-let sum = 0;
+// let num = 5;
+// let sum = 0;
 
 //! Task 3
 // Создате массив из чисел arr.
