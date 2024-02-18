@@ -4,13 +4,16 @@
 // перезаписать верхним регистром. Результат нужно вывести в консоль.
 // Подсказка: нужно использовать метод split().
 
-//? let str = "javascript";
-// let arr1 = str.split("").join("");
-// for (let i in arr1) {
-//   if (i % 2 != 0) {
-//     console.log(arr1[i].toUpperCase() + arr1.slice(1));
-// }
-// }
+let str = "javascript";
+let letters = str.split("");
+for (let i = 0; i < letters.length; i++) {
+  if (i % 2 === 1) {
+    letters[i] = letters[i].toUpperCase();
+  }
+}
+let result = letters.join("");
+console.log(result);
+
 //! Task 2
 // Eсть переменная
 // которая принимает строку в качестве аргумента и возвращает
@@ -19,6 +22,40 @@
 // К примеру:
 // 'достопримечательность'// --> 7
 // 'субстанционализирующийся' // --> 11
+
+let str1 = "субстанционализирующийся";
+let sum = 0;
+for (let i of str1) {
+  if (
+    i == "а" ||
+    i == "е" ||
+    i == "ё" ||
+    i == "и" ||
+    i == "о" ||
+    i == "у" ||
+    i == "э" ||
+    i == "ю" ||
+    i == "я" ||
+    i == "ы"
+  ) {
+    sum++;
+  }
+}
+console.log(sum);
+
+// function countVowels(str) {
+//   str = str.toLowerCase();
+//   const vowels = ["а", "о", "и", "ы", "у", "э", "й", "е", "я", "ю", "ё"];
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (vowels.includes(str[i])) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(countVowels("достопримечательность"));
+// console.log(countVowels("субстанционализирующийся"));
 
 //? let str1 = "субстанционализирующийся";
 // let str1 = 'достопримечательность'
@@ -39,19 +76,21 @@
 //каждый символ по-отдельности(игнорировать спец. и пробельные
 //  символы(то есть, ' ', '!', ',' выводить не нужно))
 
-//? let str4 = "Hello, world!";
-// for (let i = 0; i <= length; i++) {
-//     if (str4[i] == "!" && str4[i] == "," && str4[i] == " ") {
-//     }
-//     console.log(str4[i]);
+// let str4 = "Hello, world!";
+// let res = "";
+// for (let i = 0; i < str4.length; i++) {
+//   if (str4[i] !== "!" && str4[i] !== "," && str4[i] !== " ") {
+//     res += str4[i];
+//   }
 // }
+// console.log(res);
 
 //! Task 5
 //    let arrNums = [12, 21, 27, 31, 45, 50 ];
 // С помощью цикла for и оператора if выведите в console элементы
 // массива, которые больше 20-ти, но меньше 30-ти.
 
-// Task 5
+//! Task 5
 // Создайте функцию которая принимает строку, удаляет все гласные буквы из строки,
 // а согласные буквы в свою очередь переводит в заглавные и возвращает новую строку.
 // Например: ввод - 'hello', функция должна возвратить 'HLL'
@@ -73,3 +112,4 @@
 //! Task 7
 // Дана строка: 'Hello, I\'m Jack. I\'m 25 years old and I Frontend developer!',
 // вывести в консоль символы у которых четный индекс
+
