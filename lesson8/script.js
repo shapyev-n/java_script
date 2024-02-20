@@ -49,7 +49,11 @@
 // 15
 // так как 4 + 5 + 6 = 15
 
-// function checkTask1(num) {};
+// function checkTask1(num) {
+//   for (let res in num) {
+//   }
+//   console.log(num);
+// }
 // checkTask1(456);
 
 //! Задание №6
@@ -59,14 +63,23 @@
 // 2
 // т.к в строке 'hello' две буквы 'l'
 
+// function checkTask(str, letter) {
+//   let sum = 0;
+//   for (let i of str) {
+//     if (i === letter) {
+//       sum++;
+//     }
+//   }
+//   return sum;
+// }
+// console.log(checkTask("hello","l"));
+
 //! Задание №7
 // Напишите функцию, которая принимает параметром
 // элемент и возвращает его тип (typeof)
 
-// function checkTask1(num) {
-//   console.log(typeof+(num));
-// }
-// checkTask1();
+// const checkTask = (s) => typeof s;
+// console.log(checkTask("se"));
 
 //! Задание № 8
 // Напишите функцию которая принимает массив из чисел. Находит
@@ -77,29 +90,38 @@
 // Четные числа в массиве: [2, 4, 6] их сумма равна 12
 
 // let arr = [1, 2, 3, 4, 5, 6];
-let num = function (s) {
-  let newArr = [];
-  if (i % 2 == 0) {
-    newArr.push(s[i])
-  }
-  console.log(newArr);
-};
-num([1, 2, 3, 4, 5, 6]);
+// function checkTask(arr) {
+//   let pArr = [];
+//   let pSum = 0;
+//   for (let i of arr) {
+//     if (i % 2 == 0) {
+//       pArr.push(i);
+//       pSum += i;
+//     }
+//   }
+//   return `Четные число в массиве: [${pArr}] их сумма равна ${pSum}`;
+// }
+// console.log(checkTask(arr));
 
-//! Задание № 9
+// ! Задание № 9
 // Напишите функцию, которая принимает массив с числами и выводит
 // количество отрицательных чисел в этом массиве
 // Пример: [7, -5, -29, 0, 62, 4, 5, -6, -27]
 // Вывод: //4
 
-// function checkTask1(num) {
-//   let arr = [7, -5, -29, 0, 62, 4, 5, -6, -27];
-//   for (let i = 0; i < arr.length(); i--) {
-//     res = arr.length();
+// ?function checkTask(arr) {
+//   let sum = 0;
+//   for(let i=0;i<arr.length;i++){
+//     if(arr[i]<){}
+//     for(let i of arr){
+//       if(i<0){
+//         sum++;
+//       }
+//     }
 //   }
-//   console.log(res);
+//   return sum
 // }
-// checkTask1();
+// console.log(checkTask([7, -5, -29, 0, 62, 4, 5, -6, -27]));
 
 //! Задание № 10
 // Напишите функцию checkTask которая принимает число и возвращает его факториал.
@@ -109,3 +131,61 @@ num([1, 2, 3, 4, 5, 6]);
 // т.к
 // для числа , результатом будет:
 // 720
+
+// const checkTask= function(num){
+//   let f=1
+//   for(let i=1;i<=num;i++){
+//     f*=
+//   }
+// }
+
+// ! 11
+// let arr = ["hello", "hello", "hello"];
+
+// const checkTask = function () {
+//   let res = "";
+//   for (let i of arr) {
+//     for (let j in i) {
+//       if (j % 2 == 0) {
+//         res += i[j].toUpperCase();
+//       } else {
+//         res += i[j];
+//       }
+//     }
+//   }
+//   console.log(res);
+// };
+// checkTask();
+
+// ! 12
+// function checkTask(begin, end) {
+//   for (let i = begin; i <= end; i++) {
+//     if (i % 2 == 0) {
+//       console.log(i);
+//     }
+//   }
+// }
+// checkTask(40, 60);
+
+// ! 13
+// function checkTask(arr, deleteItems) {
+// for(let res of arr){
+
+// }
+// console.log(arr);
+// }
+// checkTask(["good", "hello", 5], "good")
+
+//! № 14
+// Создайте функцию rgb(), которая будет принимать три
+// числовых аргумента и возвращать строку вида «rgb(23,100,134)».
+// Если аргументы не заданы, считать их равными нулю.
+
+// function rgb(n, u, m) {
+//   console.log(n, u, m);
+// }
+// rgb(23, 100, 134);
+
+//! № 15
+// Напишите функцию, где пользователь вводит любое целое положительное число.
+// А программа суммирует все числа от 1 до введенного пользователем числа.
